@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEFORAE CART</title>
+  <link rel="stylesheet" href="cart.css">
+   <link rel="icon" href="log.jpeg">
+</head>
+<body style="background: #630000";>
+  <a href="xmain.html"><button style="    border-radius: 12px;
+    width: 40px;
+    height: 30px;background-color: #000000; color:aliceblue; margin-left: 10px;"><</button></a> 
+  <center>
+
+    <h2>GEFORAE SHOPPING CART</h4>
+  <a href="g1.html"><img style="width:120px",height="20px" src="g (3).jpeg" alt="nothing"></a>
+<a href="g3.html"><img style="width:120px",height="20px" src="g (2).jpeg" alt="nothing"></a>
+<a href="g4.html"><img style="width:120px",height="20px" src="g (4).jpeg" alt="nothing"></a><br>
+<button class="button" onclick="addToCart('BLACK HEART WITH DARK PAINS',200 )">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+        <button class="button" onclick="addToCart('DORAEMON HALLOWEEN', 220)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+        <button class="button" onclick="addToCart('JIRAYA GALLANT PAIN', 250)">Add to Cart</button><br><br>
+<a href="g5.html"><img style="width:120px",height="20px" src="g (5).jpeg" alt="nothing"></a>
+<a href="g6.html"><img style="width:120px",height="20px" src="g (7).jpeg" alt="nothing"></a>
+<a href="g7.html"><img style="width:120px",height="20px" src="a.jpeg" alt="nothing"></a><br>
+<button class="button" onclick="addToCart('ITACHI VS SASUKE', 150)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('ITACHI RETURNS TO THE LEAF', 250)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('ASUMA IS A BOUNTY', 250)">Add to Cart</button><br><br>
+
+<a href="g2.html"><img style="width:120px",height="20px" src="g (1).jpeg" alt="nothing"></a>
+<a href="g9.html"><img style="width:120px",height="20px" src="g (6).jpeg" alt="nothing"></a>
+            <a href="g10.html"><img style="width:120px",height="20px" src="c1.jpeg" alt="nothing"></a><br>
+            <button class="button" onclick="addToCart('SHINCHAN VACCATION', 220)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('NARUTO AKATSUKI CARDS', 20)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('NARUTO AKATSUKI CARDS2', 20)">Add to Cart</button><br><br>
+
+<a href="g8.html"><img style="width:120px",height="20px" src="g (20).jpeg" alt="nothing"></a>
+<a href="g11.html"><img style="width:120px",height="20px" src="ph (2).jpeg" alt="nothing"></a>
+<a href="g12.html"><img style="width:120px",height="20px" src="ph (3).jpeg" alt="nothing"></a><br>
+<button class="button" onclick="addToCart('NARUTO AKATUKI LABELS', 40)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('NARUTO EVO PHOTO FRAME', 300)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('MADARA EVO PHOTO FRAME', 320)">Add to Cart</button><br><br>
+
+<a href="g14.html"><img style="width:120px",height="20px" src="ph (5).jpeg" alt="nothing"></a>
+<a href="g13.html"><img style="width:120px",height="20px" src="ph (4).jpeg" alt="nothing"></a>
+<a href="g15.html"><img style="width:120px",height="20px" src="ph (6).jpeg" alt="nothing"></a><br>
+<button class="button" onclick="addToCart('SASUKE EVO PHOTO FRAME', 320)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('NARUTO SENSAI LABELS', 40)">Add to Cart</button>&nbsp;&nbsp;&nbsp;
+<button class="button" onclick="addToCart('NARUTO SHINOBI LABELS', 40)">Add to Cart</button><br><br>
+
+<a href="g16.html"><img style="width:120px",height="20px" src="ph (7).jpeg" alt="nothing"></a><br>
+<button class="button" onclick="addToCart('NARUTO AKATUKI LABELS 2', 40)">Add to Cart</button>
+
+  <div style="color:white;" class="cart">
+    <h2>GEFORAE CART</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <div class="total" id="cart-total">
+      Total: ₹<span id="total">0</span>
+    </div>
+  </div>
+
+  <script>
+    let cart = [];
+    let total = 0;
+
+    function addToCart(productName, price) {
+      cart.push({ name: productName, price: price });
+      total += price;
+      updateCart();
+    }
+
+    function updateCart() {
+      let cartItems = document.getElementById('cart-items');
+      cartItems.innerHTML = '';
+      cart.forEach(item => {
+        let li = document.createElement('li');
+        li.textContent = `${item.name} - ₹${item.price}`;
+        cartItems.appendChild(li);
+      });
+      document.getElementById('total').textContent = total;
+    }
+  </script>
+  </center>
+</body>
+</html>

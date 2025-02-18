@@ -1,0 +1,49 @@
+img{
+    transition: 0.5s;
+    margin:0px;
+    border-radius: #000000;
+    margin-left: 10px;}
+h5{
+        font-family:  'Arial Narrow', Arial, sans-serif;
+        margin-left:10px;
+        color: rgb(255, 255, 255);
+     
+ 
+   
+}
+h1{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    margin-left: 500px;
+    color: rgb(0, 0, 0);
+}
+h2{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    margin-left:10px;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    margin-left:10px;
+    color: rgb(255, 255, 255);
+}
+h3{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    margin-left:10px;
+    color: rgb(255, 255,255);
+}
+h4{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    margin-left:10px;
+    color: rgb(255, 255, 255);
+}
+BUTTON{
+    color: rgb(255, 255, 255);
+    background: #000000;
+    border-radius: 12px;
+    width: 40px;
+    height: 30px;
+    font-size:x-large;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
